@@ -68,18 +68,7 @@ public class ReadBinary {
       }
       catch(IOException ioe){}
    }
-   //Name: Sue - Scores: 10 10 
-//Name: Ted - Scores: 10 20 30 
-//Name: Jane - Scores: 6 5 4 3 2 1 
-//Name: Bob - Scores: 16 20 20 10 
-//Name: Joe - Scores: 6 5 2 1 
-//Name: Carol - Scores: 15 15 14 13 12 11 
-//Name: Sally - Scores: 3 2 1 
-//Name: Sam - Scores: 17 20 10 
-//Name: Will - Scores: 20 20 20 20 20 
-//Name: Wayne - Scores: 
-//Name: Tom - Scores: 2 1 
-//Name: Alex - Scores: 20 20 20 20Name: Sue - Scores: 10 10 
+//Name: Sue - Scores: 10 10 
 //Name: Ted - Scores: 10 20 30 
 //Name: Jane - Scores: 6 5 4 3 2 1 
 //Name: Bob - Scores: 16 20 20 10 
