@@ -42,16 +42,17 @@ public class CreateBinaryFile  {
 		System.out.println("Writing file...");
 
 		try{
-			DataOutputStream dataOutputStream=new DataOutputStream(new FileOutputStream("H:\\eg9\\g9\\src\\mybinary.txt"));
+			DataOutputStream dataOutputStream=new DataOutputStream(new FileOutputStream("H:\\eg9\\g9\\src\\mybinary.dat"));
 			try{
-				dataOutputStream.flush();
+				//dataOutputStream.flush();
 
 
 				/*** Write each students information ***/
 
-				dataOutputStream.writeUTF(writeName);
+				
 
 				dataOutputStream.writeInt(writeNumberofScores);
+				dataOutputStream.writeUTF(writeName);
 
 				/*** Create an array w/ enough elements to store the scores ***/
 
@@ -61,7 +62,7 @@ public class CreateBinaryFile  {
 
 					/*** write every score into the array ***/
 
-					for ( int score = 0; score < writeStudentScores.length; score++ )
+					for ( int score = 0; score < writeStudentScores.length-1; ++score )
 					{
 						dataOutputStream.writeInt(score);
 					}
@@ -80,9 +81,11 @@ public class CreateBinaryFile  {
 
 				for ( Student eachStudent : list )
 				{
-					dataOutputStream.writeUTF( eachStudent.toString() );
+					
+					
 					
 					dataOutputStream.writeInt(list.size() );
+					dataOutputStream.writeUTF( eachStudent.toString() );
 					
 				}
 
